@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+    font-family: Noto Sans, sans-serif;
+}
+
+body {
+	background-color: rgb(41, 82, 41); 
+}
+
+header {
+	padding: 3rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 2rem auto;
+    background-color: rgb(89, 145, 89);
+}
+
+main {
+    background-color: rgb(89, 145, 89);
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 200;
+	color: white;
+	margin-bottom: 1rem;
+}
+
+#new-todo-form {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-todo-input {
+	flex: 1 1 0%;
+	background-color: #043304;
+	padding: 1.5rem;
+	margin-right: 1rem;
+	color: rgb(170, 241, 170);
+	font-size: 1.25rem;
+}
+
+#new-todo-input::placeholder {
+	color: rgb(198, 195, 195);
+}
+
+#new-todo-submit {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: rgb(237, 120, 10);
+	transition: 0.4s;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.todo-list {
+	padding: 1rem;
+}
+
+.todo-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: white;
+	margin-bottom: 1rem;
+}
+
+#todos .todo {
+	display: flex;
+	justify-content: space-between;
+	background-color: #011a0c;
+	padding: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.todo .content {
+	flex: 1 1 0%;
+}
+
+.todo .content .text {
+	color: white;
+	font-size: 20px;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.todo .content .text:not(:read-only) {
+	color: #eb2926;
+}
+
+.todo .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.todo .actions button {
+	margin: 0 0.5rem;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.todo .actions .edit {
+    color: rgb(50, 235, 13) ;
+}
+
+.todo .actions .delete {
+	color: #eb2926;
+}
