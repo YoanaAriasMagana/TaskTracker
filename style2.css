@@ -120,3 +120,11 @@ main {
 .todo .actions .delete {
 	color: #eb2926;
 }
+
+.disclaimer {
+	text-align: center;
+	margin: 20px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
